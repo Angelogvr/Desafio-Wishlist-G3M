@@ -13,7 +13,7 @@ export default class Desejos extends Component {
 
     listarDesejos = () => {
 
-        fetch('http://localhost:5000/api/Desejo')
+        fetch('http://localhost:5000/api/Desejos')
 
             .then(resposta => resposta.json())
 
@@ -27,7 +27,7 @@ export default class Desejos extends Component {
 
         event.preventDefault()
 
-        fetch('http://localhost:5000/api/Desejo', {
+        fetch('http://localhost:5000/api/Desejos', {
 
             method: 'POST',
 
