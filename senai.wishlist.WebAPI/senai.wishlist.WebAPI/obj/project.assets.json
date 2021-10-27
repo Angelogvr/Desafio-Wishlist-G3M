@@ -7543,19 +7543,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aluno\\.nuget\\packages\\": {}
+    "C:\\Users\\AMD\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aluno\\Desktop\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
       "projectName": "senai.wishlist.WebAPI",
-      "projectPath": "C:\\Users\\aluno\\Desktop\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
-      "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aluno\\Desktop\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AMD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
