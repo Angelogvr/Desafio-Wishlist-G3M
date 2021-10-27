@@ -5,9 +5,11 @@ export default class Desejos extends Component {
         super(props);
         this.state = {
             listaDesejos: [],
-            nomeDesejo: '',
-            idUsuario: 1,
-            email: ''
+            descricao: '',
+            idUsuario: 0,
+            dataCadastro: '',
+            email: '',
+            senha: ''
         }
     };
 
@@ -32,7 +34,9 @@ export default class Desejos extends Component {
             method: 'POST',
 
             body: JSON.stringify({
-                nomeDesejo: this.state.nomeDesejo,
+                idUsuario: this.state.idUsuario,
+                descricao: this.state.descricao,
+                dataCadastro: this.state.dataCadastro,
             }),
 
             headers: { 'Content-Type': 'application/json' }
@@ -47,24 +51,26 @@ export default class Desejos extends Component {
             .then(this.LimparCampos)
     }
 
-    atualizarEstadoTitulo = async (event) => {
+    atualizarEstadoDescricao = async (event) => {
 
         this.setState({
-            nomeDesejo: event.target.value
+            descricao: event.target.value
         });
     };
 
     atualizarEmail = async (event) => {
 
         this.setState({
-            email: event.target.value
+            email: event.target.value,
+            senha: event.target.value
         });
     };
 
     limparCampos = () => {
         this.setState({
-            nomeDesejo: '',
-            idUsuario: 0
+            idUsuario: 0,
+            descricao: '',
+            dataCadastro: ''
         })
     }
 
@@ -77,7 +83,7 @@ export default class Desejos extends Component {
                         <form onSubmit={this.cadastrarDesejo}>
                             <h2>Cadastrar novo desejo</h2>
                             <input type="text" value={this.state.email} onChange={this.atualizarEmail} placeholder="Digite o seu email" />
-                            <input type="text" value={this.state.nomeDesejo} onChange={this.atualizarEstadoTitulo} placeholder="Digite o seu desejo" />
+                            <input type="text" value={this.state.descricao} onChange={this.atualizarEstadoDescricao} placeholder="Digite o seu desejo" />
                             <button type="submit">Cadastrar</button>
                         </form>
                     </div>
@@ -93,9 +99,9 @@ export default class Desejos extends Component {
                             {
                                 this.state.listaDesejos.map((desejos) => {
                                     return (
-                                        <tr key={desejos.idDesejo}>
-                                            <td>{desejos.idDesejo}</td>
-                                            <td>{desejos.nomeDesejo}</td>
+                                        <tr key={desejos.descricao}>
+                                            <td>{desejos.descricao}</td>
+                                            <td>{desejos.dataCadastro}</td>
                                         </tr>
                                     )
                                 })
