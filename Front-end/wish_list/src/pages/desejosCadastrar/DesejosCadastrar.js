@@ -1,6 +1,7 @@
 import { Component } from "react";
+import './indexCriar.css';
 
-class Desejos extends Component {
+class DesejosCadastrar extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -9,26 +10,8 @@ class Desejos extends Component {
             idUsuario: 0,
             idDesejo: 0,
             dataCadastro: '',
-            /* email: '',
-            senha: '' */
         }
     };
-
-    componentDidMount() {
-        this.listarDesejos()
-    }
-
-    listarDesejos = () => {
-
-        fetch('http://localhost:5000/api/Desejos')
-
-            .then(resposta => resposta.json())
-
-            .then(dados => this.setState({ listaDesejos: dados }))
-
-            .catch(erro => console.log(erro))
-    }
-
 
     cadastrarDesejo = (event) => {
 
@@ -84,54 +67,33 @@ class Desejos extends Component {
             idUsuario: 0,
             idDesejo: 0,
             dataCadastro: '',
-            /* email: '',
-            senha: '' */
         })
     }
-
+    
     render() {
         return (
-            <main>
-                <div>
-                    <div>
-                        <h1>WishList</h1>
+            <body>
+                <header class="header">
+                    <h1 class="quaselog">Wishlist</h1>
+                </header>
+                <main>
+                    <div class="pratcMain">
+                        <span class="desjN">Escreva abaixo o seu novo desejo</span>
                         <form onSubmit={this.cadastrarDesejo}>
-                            <h2>Cadastrar novo desejo</h2>
-                            <input type="number" value={this.state.idUsuario} onChange={this.atualizarUsuario} placeholder="Digite o seu id" />
-                            <input type="text" value={this.state.descricao} onChange={this.atualizarEstadoDescricao} placeholder="Digite o seu desejo" />
-                            <input type="datetime" value={this.state.dataCadastro} onChange={this.atualizarData} placeholder="Digite a data" />
-                            <button type="submit">Cadastrar</button>
+                            <div class="alinhamento">
+                                <input class="input" type="number" value={this.state.idUsuario} onChange={this.atualizarUsuario} placeholder="Digite o seu id" />
+                                <input class="input" type="text" value={this.state.descricao} onChange={this.atualizarEstadoDescricao} placeholder="Escreva aqui seu desejo!" />
+                                <button type="submit">Adicionar</button>
+                            </div>
                         </form>
                     </div>
-                    <h2>Desejos</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>idDesejo</th>
-                                <th>idUsuario</th>
-                                <th>descrição</th>
-                                <th>Data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
-                                this.state.listaDesejos.map((desejos) => {
-                                    return (
-                                        <tr>
-                                            <td>{desejos.idDesejo}</td>
-                                            <td>{desejos.idUsuario}</td>
-                                            <td>{desejos.descricao}</td>
-                                            <td>{desejos.dataCadastro}</td>
-                                        </tr>
-                                    )
-                                })
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            </main>
+                </main>
+                <footer>
+                    <span class="quaselog">Wishlist</span>
+                </footer>
+            </body>
         )
     }
 }
 
-export default Desejos
+export default DesejosCadastrar

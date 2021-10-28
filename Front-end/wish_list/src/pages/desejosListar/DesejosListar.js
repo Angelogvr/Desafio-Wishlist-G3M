@@ -1,6 +1,6 @@
 import { Component } from "react";
 import './indexListar.css';
-/* import '../home/Assets/banner' */
+import banner from '../home/Assets/banner.png'
 
 class DesejosListar extends Component {
     constructor(props) {
@@ -8,11 +8,7 @@ class DesejosListar extends Component {
         this.state = {
             listaDesejos: [],
             descricao: '',
-            idUsuario: 0,
-            idDesejo: 0,
             dataCadastro: '',
-            /* email: '',
-            senha: '' */
         }
     };
 
@@ -39,13 +35,11 @@ class DesejosListar extends Component {
                 </header>
                 <main>
                     <div class="semiMain">
-                        <span class="spanTt">Wishlist de Username</span>
-                        <img src="../Assets/undraw_To_do_re_jaef 1.png" alt="" srcset=""></img>
+                        <span class="spanTt">Lista de Desejos</span>
+                        <img src={banner} alt="" srcset=""></img>
                         <table class="tb">
                             <thead>
                                 <tr>
-                                    <th>idDesejo</th>
-                                    <th>idUsuario</th>
                                     <th class="desejoTh">Desejo</th>
                                     <th class="DtTh">Data de Criação</th>
                                 </tr>
@@ -55,8 +49,6 @@ class DesejosListar extends Component {
                                     this.state.listaDesejos.map((desejos) => {
                                         return (
                                             <tr>
-                                                <td>{desejos.idDesejo}</td>
-                                                <td>{desejos.idUsuario}</td>
                                                 <td class="desejCad">{desejos.descricao}</td>
                                                 <td class="dataCad">{desejos.dataCadastro}</td>
                                             </tr>
@@ -67,7 +59,7 @@ class DesejosListar extends Component {
                         </table>
                     </div>
                     <footer>
-                        <span class="quaselog">Wishlist</span>
+                        <a class="quaselog" href="http://localhost:3000/">Wishlist</a>
                     </footer>
                 </main>
             </body>

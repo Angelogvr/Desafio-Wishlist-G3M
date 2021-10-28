@@ -1,8 +1,7 @@
 import './App.css';
 import checklist from './Assets/check-list1.png'
-import banner from './Assets/banner.png'
-import img1 from './Assets/img.png'
-import img2 from './Assets/img2.png'
+import img1 from './Assets/img.png';
+import img2 from './Assets/img2.png';
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       <section class="Escolhas">
         <a class="secRed">
           <div>
-            <span class = "ajeitar">Adicionar Desejo</span>
+            <a class = "ajeitar" href="http://localhost:3000/DesejosCadastrar">Adicionar Desejo</a>
           </div>
           <div class="d2">
             <img src={img1} alt=""></img>
@@ -24,7 +23,7 @@ function App() {
         </a>
         <a class="secRed" >
           <div>
-            <span>Ver Wishlist</span>
+            <a class="ver_lista" href="http://localhost:3000/DesejosListar">Ver Wishlist</a>
           </div>
           <div class="d2">
             <img src={checklist} alt="imagem check-list"></img>

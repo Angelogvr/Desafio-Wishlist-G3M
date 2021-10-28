@@ -7548,11 +7548,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\API\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
       "projectName": "senai.wishlist.WebAPI",
-      "projectPath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
+      "projectPath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\API\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
       "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\API\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AMD\\AppData\\Roaming\\NuGet\\NuGet.Config",

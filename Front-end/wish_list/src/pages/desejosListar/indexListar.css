@@ -34,6 +34,8 @@ footer{
     text-transform: uppercase;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 48px;
+    text-decoration: none;
+    color: black;
 }
 
 .semiMain{

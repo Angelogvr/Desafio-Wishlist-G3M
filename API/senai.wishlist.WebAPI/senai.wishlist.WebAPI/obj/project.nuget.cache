@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R/Ni1svHRVYyTQ4M+zWDR4Ijh001qSrMn7VJtfK1Lsu+IICAUOqtpjwwNQzh5hK3rw1BJhmsRh3Xzi3qFrGEuQ==",
+  "dgSpecHash": "+GTQL9HbpVPWkh9cjc68Ld6RtbLqE5LkLGjzXFaWMR/2u1lYbz2rux67O7MoQ4XjxPQNeOqhUdT+WNl7I5gynw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\AMD\\Documents\\Desafio-Wishlist-G3M\\API\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI\\senai.wishlist.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AMD\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\AMD\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.11\\microsoft.aspnetcore.authentication.jwtbearer.5.0.11.nupkg.sha512",
