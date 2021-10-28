@@ -44,6 +44,7 @@ namespace senai.wishlist.WebAPI.Controllers
         [HttpPost]
         public IActionResult Post(Desejo novoDesejo)
         {
+            novoDesejo.DataCadastro = DateTime.Now;
             _DesejoRepository.Cadastrar(novoDesejo);
 
             return StatusCode(201);
