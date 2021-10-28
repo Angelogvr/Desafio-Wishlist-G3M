@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+.header{
+    width: 100%;
+    height: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AFE0FF;
+    margin-bottom: 85px;
+}
+
+.quaselog{
+    text-transform: uppercase;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 48px;
+}
+
+h1 {
+    color: black;
+}
+
+body{
+    background-color: #AFE0FF;
+}
+
+.pratcMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 417px;
+}
+
+.pdH2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+}
+
+.d1{
+    margin-top: 70px;
+}
+.d2{
+    margin-top: 40px;
+}
+
+.secRed{
+    width: 358px;
+    height: 224px;
+    border-radius: 10px;
+    background-color: #58C6F7;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+}
+
+.ajeitar{
+    width: 200px;
+    height: auto;
+}
+
+.Escolhas{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pratcMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background-color: #58C6F7;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
